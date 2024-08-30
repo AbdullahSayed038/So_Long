@@ -1,0 +1,1 @@
+flags = libmlx.a -framework OpenGL -framework AppKit
