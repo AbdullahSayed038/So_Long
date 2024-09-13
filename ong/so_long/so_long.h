@@ -35,6 +35,8 @@ typedef struct m_data
     int img_height;      // Height of images (wall and ground)
 	int p_height;
 	int p_width;
+	int x;
+	int y;
 } m_lst;
 
 #endif

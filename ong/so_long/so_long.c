@@ -18,8 +18,12 @@ void	draw_map(m_lst *map)
 				mlx_put_image_to_window(map->mlx, map->win, map->ground_img , \
 					j * map->img_width, i * map->img_height);
 			if (map->map[i][j] == 'P')
-				mlx_put_image_to_window(map->mlx, map->win, map->player_img , \
+				{
+					map->x = j;
+					map->y = i;
+					mlx_put_image_to_window(map->mlx, map->win, map->player_img , \
 					j * map->p_width + 115, i * map->p_height);
+				}
 			j++;
 		}
 		i++;
