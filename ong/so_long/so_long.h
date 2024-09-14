@@ -27,6 +27,9 @@ typedef struct m_data
     void *wall_img;      // Image for walls
     void *ground_img;    // Image for ground
 	void *player_img;    // Image for player
+	void *collect_img;
+	void *exit_img;
+	void *door_img;
     char **map;          // 2D array to hold the map
 	char **map_copy;
     int map_width;       // Width of the map
@@ -37,6 +40,9 @@ typedef struct m_data
 	int p_width;
 	int x;
 	int y;
+	int dx;
+	int dy;
+	int collect;
 } m_lst;
 
 #endif

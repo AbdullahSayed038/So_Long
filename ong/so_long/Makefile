@@ -1,6 +1,6 @@
 NAME = so_long
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address,undefined -O3
 LDFLAGS = -framework OpenGL -framework AppKit
 SRC = so_long.c
 OBJ = $(SRC:.c=.o)
